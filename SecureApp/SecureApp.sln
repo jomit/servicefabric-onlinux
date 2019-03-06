@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "SecureApp", "SecureApp\SecureApp.sfproj", "{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiService", "WebApiService\WebApiService.csproj", "{50D33042-89B6-48E5-8203-9A40926E4DB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0EB45B52-418B-4112-99E1-065AD4AC448D}"
+	ProjectSection(SolutionItems) = preProject
+		CertSetup.ps1 = CertSetup.ps1
+		CreateCert.ps1 = CreateCert.ps1
+		deploy.ps1 = deploy.ps1
+		remove.ps1 = remove.ps1
+		SetCertAccess.ps1 = SetCertAccess.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Debug|x64.ActiveCfg = Debug|x64
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Debug|x64.Build.0 = Debug|x64
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Debug|x64.Deploy.0 = Debug|x64
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Release|Any CPU.ActiveCfg = Release|x64
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Release|x64.ActiveCfg = Release|x64
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Release|x64.Build.0 = Release|x64
+		{5CE281AC-B835-4526-9DA5-0A1A33DBA54C}.Release|x64.Deploy.0 = Release|x64
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Debug|x64.Build.0 = Debug|Any CPU
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Release|x64.ActiveCfg = Release|Any CPU
+		{50D33042-89B6-48E5-8203-9A40926E4DB1}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C008FB7B-B946-4126-AF3F-D8206B34DCDE}
+	EndGlobalSection
+EndGlobal

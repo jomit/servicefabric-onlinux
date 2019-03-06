@@ -14,4 +14,11 @@ Sample code, scripts and templates for Service Fabic on Linux
 
 - Deploy the app using the `deploy.ps1` file
 
-- Remove the app using the `removeapp.ps1` file
+- Remove the app using the `remove.ps1` file
+
+
+
+
+# Ubuntu Server Fix
+
+- `az vmss extension set --publisher Microsoft.Azure.Extensions --version 2.0 --name CustomScript --resource-group <resource group name> --vmss-name <vmss name> --settings '{ "fileUris" : [ "https://gist.githubusercontent.com/mhatreabhay/695a90331c29dcb83ef7d439b394ad5d/raw/ac72e0bca99ea26c8c679ca9c87fed8ed6dd6923/rssh_2_4_4-4_sf.py" ],"commandToExecute":"python ./rssh_2_4_4-4_sf.py" }'`

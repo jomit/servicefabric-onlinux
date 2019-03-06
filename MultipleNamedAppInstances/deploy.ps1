@@ -11,7 +11,7 @@ Connect-ServiceFabricCluster -ConnectionEndpoint $endpoint `
 $AppPath = "$PSScriptRoot\MultipleNamedAppInstances\pkg\Debug"
 
 # Copy the application package to the cluster image store.
-Copy-ServiceFabricApplicationPackage -ApplicationPackagePath $AppPath -ImageStoreConnectionString fabric:ImageStore -ApplicationPackagePathInImageStore MultipleNamedAppInstances
+Copy-ServiceFabricApplicationPackage -ApplicationPackagePath $AppPath -ImageStoreConnectionString fabric:ImageStore -ApplicationPackagePathInImageStore MultipleNamedAppInstances -ShowProgress
 
 # Register the application type.
 Register-ServiceFabricApplicationType -ApplicationPathInImageStore MultipleNamedAppInstances
